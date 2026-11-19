@@ -1,0 +1,31 @@
+project:
+  name: "BooleanThreshold"
+  description: "Verification of the asymptotic count of Boolean threshold functions and the linear dependence probability of independent uniform sign vectors."
+  authors:
+    - "Xinyuan Xie"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Xinyuan Xie"
+
+classification:
+  arxiv: ["math.PR", "math.CO"]
+
+sources:
+  - title: "Boolean threshold functions, neuron capacity, and memory retrieval"
+    authors: ["Xinyuan Xie"]
+    id: "arXiv:2609.29756v1"
+    relationship: "formalizes"
+
+automation:
+  methods:
+    - method: "agent"
+      tool_setup: >-
+        AI agents drafted and revised the Lean statement, implemented
+        the proof, and ran verification under human direction.
+
+review:
+  status: "self-assessed"
+  notes: >-
+    The project owner reviewed and approved the statement and definitions
+    before proof development. The solution passed Comparator with Lean,
+    NanoDa, and con-ron.
